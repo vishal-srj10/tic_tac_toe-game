@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+ 
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet"  href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+ 
+
+    <div class="container">
+        <h5>Click on the Below button to Know The Rules </h5>
+        <button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#demo">Rules</button>
+        <div id="demo" class="collapse">
+         Rule No.1 : Game starts by just Tap on Box.<br>
+         Rule No.2 : First Player starts as Player X.<br>
+         Rule No.3 : Second Player starts as Player O.<br>
+         Rule No.4 : If Match Is Tie Then You Can Reset The Game.
+        </div>
+      </div>
+    </div>
+  
+        <div class="main">
+       
+        <div id="h101">
+            <span>T</span>
+            <span>I</span>
+            <span>C</span>
+            <span></span>
+            <span>T</span>
+            <span>A</span>
+            <span>C</span>
+            <span></span>
+            <span>T</span>
+            <span>O</span>
+            <span>E</span>
+        </div>
+
+
+     <br>
+       
+<table>
+    <tr>
+       <td><input type="text" id="b1" onclick="checkturn3(); chooseXorO();" readonly></td>
+        <td><input type="text" id="b2" onclick="checkturn4(); chooseXorO();" readonly></td>
+        <td><input type="text" id="b3" onclick="checkturn5(); chooseXorO();" readonly></td>
+    </tr>
+    <tr> 
+        <td><input type="text" id="b4" onclick="checkturn6(); chooseXorO();" readonly></td>
+        <td><input type="text" id="b5" onclick="checkturn7(); chooseXorO();" readonly></td>
+        <td><input type="text" id="b6" onclick="checkturn8(); chooseXorO();" readonly></td>
+    </tr>
+     <tr>
+        <td><input type="text" id="b7" onclick="checkturn9(); chooseXorO();" readonly></td>
+        <td><input type="text" id="b8" onclick="checkturn10(); chooseXorO();" readonly></td>
+        <td><input type="text" id="b9" onclick="checkturn11(); chooseXorO();" readonly></td>
+    </tr>
+</table>
+   
+            <br>
+            <button class="btn btn-danger btn-lg" onclick="reset()"> Restart Game </button>
+            <br>
+            <p id="print"> </p>
+            <footer>  
+                <p><b>Vishal Saroj</b><br><b>Newton School</b><br><b>Contact information:</b>   
+                <a href="mailto:vishalsaroj@gmail.com">vishalsaroj@gmail.com</a>.  
+                </p>  
+                </footer>  
+
+</div>
+    </body>
+    </html>
